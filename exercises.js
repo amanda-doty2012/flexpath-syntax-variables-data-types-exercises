@@ -1,3 +1,4 @@
+import { type } from "os";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -17,7 +18,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_09();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +32,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello, World!");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +50,10 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 35;
+  const myName = 'Amanda';
+  console.log(myAge);
+  console.log(myName);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +80,14 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let sum = num1 + num2;
+  let subtract = num1-num2;
+  let multiply = num1*num2;
+  let divide = num1/num2;
+  console.log(sum);
+  console.log(subtract);
+  console.log(multiply);
+  console.log(divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +106,12 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x = 10;
+  console.log(typeof x);
+  x = 'Awesome!';
+  console.log(typeof x);
+  x = true;
+  console.log(typeof x);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +129,9 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  isAvailable != true;
+
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +156,15 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = 'Hey there!';
+  let upper = message.toUpperCase();
+  console.log(upper);
+
+  let lower = message.toLowerCase();
+  console.log(lower);
+
+  let length = message.length;
+  console.log(length)
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +191,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = 'Amanda Doty';
+  let greeting = `Hello, ${name}! Welcome to JavaScript!`;
+  console.log(greeting);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +214,10 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let a = ;
+  console.log(a);
+  let b = null;
+  console.log(b);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -206,7 +237,13 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Stand',
+    author: 'Stephen King',
+    publishedYear: 1978
+  };
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
