@@ -18,7 +18,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_09();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -214,7 +214,7 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let a = ;
+  let a = ' ';
   console.log(a);
   let b = null;
   console.log(b);
@@ -263,7 +263,14 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Stand',
+    author: 'Stephen King',
+    publishedYear: 1978
+  };
+
+  console.log(book.title);
+  console.log(book['author']);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -285,7 +292,17 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Stand',
+    author: 'Stephen King',
+    publishedYear: 1978
+  };
+  
+  book.publishedYear = 1980;
+
+  book['genre'] = 'Horror';
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -304,7 +321,17 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: 'The Stand',
+    author: 'Stephen King',
+    publishedYear: 1978
+  };
+
+  console.log(book);
+
+  delete book.author;
+
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -335,7 +362,11 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+
+  copy.name = 'Bob';
+
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -355,7 +386,8 @@ function exercise_14() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date ;
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -377,7 +409,11 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+
+  console.log(`Full Year: ${currentDate.getFullYear()}`);
+  console.log(`Month: ${currentDate.getMonth()}`);
+  console.log(`Day: ${currentDate.getDate()}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -402,7 +438,9 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date(1989, 9, 1);
+  let bdString = birthday.toDateString();
+  console.log(bdString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -429,7 +467,13 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date();
+
+  let difference = currentDate - pastDate;
+
+  let daysDifference = difference/(1000 * 60 * 60 * 24);
+
+  console.log(Math.ceil(daysDifference));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -460,7 +504,11 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let plusOperator = 'With Plus Operator: ' + msgPart1 + ' ' + msgPart2 + '!';
+  console.log(plusOperator);
+
+  let tempLiteral = `With Template Literal: ${msgPart1} ${msgPart2}!`;
+  console.log(tempLiteral);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -493,7 +541,12 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes('JavaScript')); // this appears in the actual text as it is written here, JavaScript searches for
+                                            // shape and not words.
+
+  console.log(text.includes('Python'));
+
+  console.log(text.includes('javascript'));
 
   // CODE IN THE OPEN LINES ABOVE
 }
