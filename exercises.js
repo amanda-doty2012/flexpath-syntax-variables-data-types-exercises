@@ -214,7 +214,7 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  let a = ' ';
+  let a;
   console.log(a);
   let b = null;
   console.log(b);
